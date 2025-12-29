@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><label for="userName">Họ và tên:</label></td>
+        <td><input type="text" name="userName" id="userName" /></td>
+      </tr>
+      <tr>
+        <td><label for="date">Ngày sinh:</label></td>
+        <td><input type="date" name="date" id="date" /></td>
+      </tr>
+      <tr>
+        <td><label for="sex">Giới tính:</label></td>
+        <td>
+          <input type="radio" name="sex" id="sex" value="nam" /> Nam
+          <input type="radio" name="sex" id="sex" value="nu" /> Nữ
+        </td>
+      </tr>
+      <tr>
+        <td><label for="cccd">Số căn cước công dân:</label></td>
+        <td><input type="number" id="cccd" name="cccd" /></td>
+      </tr>
+      <tr>
+        <td><label for="ngayCap">Ngày cấp:</label></td>
+        <td><input type="date" name="ngayCap" id="ngayCap" /></td>
+      </tr>
+      <tr>
+        <td><label for="noiCap">Nơi cấp:</label></td>
+        <td><input type="text" name="noiCap" id="noiCap" /></td>
+      </tr>
+      <tr>
+        <td><label for="tele">Số điện thoại: </label></td>
+        <td><input type="tel" name="tele" id="tele" /></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" name="email" id="email" /></td>
+      </tr>
+      <tr>
+        <td><label for="diaChi">Địa chỉ thường trú:</label></td>
+        <td><textarea name="diaChi" id="diaChi"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="tamChu">Địa chỉ tạm chú</label></td>
+        <td><textarea name="tamChu" id="tamChu"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="canCuoc">Loại căn cước công dân:</label></td>
+        <td>
+          <input type="radio" name="canCuoc" id="canCuoc" /> Căn cước công dân
+          mới <input type="radio" name="canCuoc" id="canCuoc" /> Căn cước công
+          dân cũ
+        </td>
+      </tr>
+      <tr>
+        <td><label for="danToc">Dân tộc:</label></td>
+        <td><input type="text" name="danToc" id="danToc" /></td>
+      </tr>
+      <tr>
+        <td><label for="tonGiao">Tôn giáo:</label></td>
+        <td><input type="text" name="tonGiao" id="tonGiao" /></td>
+      </tr>
+      <tr>
+        <td><label for="quocTich">Quốc Tịch:</label></td>
+        <td><input type="text" name="quocTich" id="quocTich" /></td>
+      </tr>
+      <tr>
+        <td><label for="parents">Họ tên cha/mẹ:</label></td>
+        <td><input type="text" name="parents" id="parents" /></td>
+      </tr>
+      <tr>
+        <td><label for="idparents">Số CMND/CCCD của cha/mẹ:</label></td>
+        <td><input type="text" name="idparents" id="idparents" /></td>
+      </tr>
+      <tr>
+        <td><label for="tinh">Tỉnh/Thành Phố</label></td>
+        <td>
+          <select name="tinh" id="tinh">
+            <option value="tinh">Chọn Tỉnh/Thành Phố</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <button type="submit">Gửi thông tin</button>
+  </body>
+</html>

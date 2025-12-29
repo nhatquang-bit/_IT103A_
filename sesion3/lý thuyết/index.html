@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form: để tạo một biểu mẫu thao tác với dữ liệu  -->
+    <!-- method: get -  -->
+    <form method="get">
+      <!-- thẻ input để tạo những ô người dùng nhập -->
+      <!-- type : xác định kiểu dữ liệu mà người dùng nhập -->
+      <!-- Text dùng để nhập chữ -->
+      <!-- placehelder mô tả cho người dùng biết cần phải nhập gì -->
+      <!-- label: thẻ nhán dán -->
+      <!-- required bắt buộc người dùng nhập vào dữ liệu -->
+      <!-- readonly: chỉ đọc -->
+      <!-- value: Xét dư liệu cho ô input -->
+      <div>
+        <label for="username">Tên người dùng:</label>
+        <input
+          type="text"
+          placeholder="Nhập tên người dùng"
+          name="username"
+          id="username"
+          required
+          readonly
+          value="Lương Quốc Tuấn"
+        />
+      </div>
+      <br />
+      <!-- Number nhập số -->
+      <div>Tuổi: <input type="number" name="number" id="number" /></div>
+      <br />
+      <!-- email để nhập email -->
+      <div>Email: <input type="email" id="email" name="email" /></div>
+      <br />
+      <!-- color để nhập color -->
+      <div>Chọn màu yêu thích: <input type="color" /></div>
+      <br />
+      <!-- date để nhập ngày tháng năm sinh -->
+      <div>Ngày tháng năm sinh: <input type="date" /></div>
+      <br />
+      <!-- password dùng để bảo mật thông tin -->
+      <div>Mật khẩu: <input type="password" /></div>
+      <br />
+      <div>Mật khẩu<input type="range" /></div>
+      <!--textarea Giống input nhưng có thêm nhiều dòng thường dùng để nhập bài văn đoạn văn -->
+      <textarea
+        name=""
+        id=""
+        rows="10"
+        placeholder="Nhập vào đoạn văn"
+      ></textarea>
+      <br />
+      <!-- radio: chọn lựa chọn - 1 lựa chọn duy nhất -->
+      <label for="nam">Nam</label>
+      <input type="radio" id="nam" name="gioitinh" value="nam" />
+      <label for="nu">Nữ</label>
+      <input type="radio" id="nu" name="gioitinh" value="nu" />
+      <br />
+      <!-- checkbox  -->
+      <div>
+        <label for="namcheckbox">Nam</label>
+        <input type="checkbox" value="Nam" />
+        <label for="nucheckbox">Nữ</label>
+        <input type="checkbox" value="Nu" />
+      </div>
+      <!-- select -->
+      <div>
+        <label for="thanhpho">Thành phố sinh sống</label>
+        <select name="thanhpho" id="thanhpho">
+          <option value="hagiang" selected>Hà Giang</option>
+          <option value="hanoi">Hà Nội</option>
+          <option value="thanhhoa" disabled>Thanh Hóa</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
